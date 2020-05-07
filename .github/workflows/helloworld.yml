@@ -1,0 +1,19 @@
+name: test1
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: hello
+      run: echo "Hello"
+
+  world:
+    runs-on: ubuntu:16.04
+    steps:
+    - name: world
+      run: | 
+        echo "World"
+        ls -al
